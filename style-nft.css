@@ -64,6 +64,8 @@ main {
   opacity: 0;
 }
 
+
+
 .content {
   width: 330px;
   height: 260px;
@@ -89,6 +91,7 @@ h1:hover {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 18px;
 }
 
 .blue {
