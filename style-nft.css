@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --veryDarkBlue: hsl(217, 54%, 11%);
+  --veryDarkCard: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --veryDarkBody: hsl(215.63, 55.17%, 11.37%);
+}
+
+body {
+  background-color: var(--veryDarkBody);
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  width: 375px;
+  margin: 3% auto;
+  height: 650px;
+  background-color: var(--veryDarkCard);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 14px 6px 12px var(--veryDarkBlue);
+}
+
+.img-main {
+  width: 330px;
+  margin: 7% auto;
+  height: 330px;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img-main:hover .masks {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.masks {
+  width: 330px;
+  height: 330px;
+  background-color: var(--cyan);
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+
+.content {
+  width: 330px;
+  height: 260px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blue {
+  color: var(--softBlue);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.line {
+  height: 0.5px;
+  background-color: var(--veryDarkBlueLine);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.creator img {
+  height: 45px;
+  margin-right: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.user:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
